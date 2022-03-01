@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Logo{
+    width: 120px;
+    height: auto;
+}
+
+h2{
+    color:white;
+}
+h3{
+    color: white;
+    margin-top:0;
+    margin-bottom: 0;
+}
+/*------------------Navegador---------------*/
+nav{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    position: fixed;
+    width: 97vw;
+    left: 1vw;
+    margin:0 auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+
+}
+nav ul li{
+    margin: 0px;
+    padding: 10px;
+    color: rgb(191, 195, 199);
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover, 
+nav ul li.activo{
+    color: white ;
+}
+
+.busqueda{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.busqueda input{
+    border-radius: 4px;
+    width: 50%;
+}
+
+.busqueda img{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    right: -3px;
+    bottom: 10px;
+}
+
+.niños{
+    display: flex;
+    width: 12%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.niños p {
+    color: rgb(191, 195, 199);
+}
+.niños p:hover{
+    color: white;
+}
+
+.niños img{
+    width: 40px;
+    height: auto;
+    vertical-align: center;
+    border-radius: 10%;
+}
+nav img{
+    width: 60px;
+    height: auto;
+}
+/*------------------Pelicula Principal---------------*/
+.background{
+    color: white;
+    background-image: url();
+    height: 110%;
+    background: linear-gradient(rgba(0,0,0,.50) 0%,rgba(0,0,0,.50) 0% ), url("https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2021/06/10-curiosidades-de-Batman-El-Caballero-de-la-Noche-la-mejor-pelicula-del-Hombre-Murcielago-1.jpg?resize=1280%2C720&quality=80&ssl=1");
+    background-position: center center;
+    background-size: cover;  
+    margin-bottom: 3%;  
+}
+
+.background section{
+    width: 25%;
+    display: block;
+    margin-left: 5%;
+    padding-top: 10%;
+}
+
+.background div img{
+    width: 120px;
+    height: auto;
+    
+}
+
+.background section p{
+    font-family: 'Kanit';
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.background div span h2{
+    display: inline;
+    font-family: 'Kanit';
+    font-size: 250px;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: black;
+    margin-left: 1%;
+    margin-right: -1.5%;
+}
+.background #mas-populares{
+    font-family: 'Kanit';
+    text-shadow: 1px 1px 1px black;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+/*-----------------Tendencias---------------*/
+.Tendencias{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    width: 100vw;
+    gap: 2px;
+    margin-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.Tendencias span{
+    min-width: 20%;
+    height: auto;
+}
+
+.Tendencias span img{
+
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Tendencias span img:hover{
+
+    transform: scale(1.2);
+    transform-origin: center;
+    transition-delay: 0.2s;
+}
+
+/*-----------------Aclamadas---------------*/
+.Aclamadas{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    width: 100vw;
+    gap: 2px;
+    margin-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+.Aclamadas span{
+    min-width: 20%;
+    height: auto;
+}
+
+.Aclamadas span img{
+
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Aclamadas span img:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    transition-delay: 0.2s;
+}
+ /*----------------Footer--------------*/
+
+ footer{
+    margin-left: 1%;
+ }
+
+ footer div img{
+     background-color: white;
+     width: 2em;
+     border-radius: 50%;
+     margin: 2%;
+     
+ }
+
+ footer #youtube {
+    border-radius: 10%;
+    background-color: black;
+ }
+
+ .final-info {
+    color: rgb(191, 195, 199);
+     margin-left: 1%;
+     display: grid;
+     grid-auto-flow: column ;
+     grid-template-columns: repeat(4,auto);
+     grid-template-rows: repeat(4,auto);
+     row-gap: 5%;    
+ }
+
+ .final-info span a:hover{
+    color: white;
+ }
+ 
+ .final-info #colum-3,.final-info #colum-4 {
+    grid-row-start: 1;
+ }

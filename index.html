@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!--Barra de navegacion-->
+    <!--Buscador y menu en header-->
+   <header>
+        <nav>
+            <!--Logo-->
+            <img class="Logo" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Logo Netflix">
+            <!--Menu superior-->
+            <ul>
+                <li class="activo">Inicio</li>
+                <li>Series</li>
+                <li>Peliculas</li>
+                <li>Novedades Populares</li>
+                <li>Mi lista</li>
+            </ul>
+            <!--busqueda-->
+            <section class="busqueda">
+                    <input type="text" placeholder="Títulos, personas, géneros"> 
+                    <span class="lupa"><img src="/Imagenes/lupa.png" alt=""></span>
+            </section>
+            <section class="niños">
+                <!--Niños-->
+                <p>Niños</p>
+                <!--Notificacion-->
+                <span> <img src="/Imagenes/notificacion.png">
+                </span>
+                <!--Perfil-->
+                <span>
+                    <img src="https://ih1.redbubble.net/image.618393699.1999/flat,1000x1000,075,f.u2.jpg
+                " alt="Pefil">
+                </span>
+            </section>
+        </nav>
+    </header> 
+    <!--Mas vistos(Flexbox)-->
+    <main>
+        <div class="background">
+            <section>
+                <h3>Batman</h3>
+                <p><strong>la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman mantiene a raya el crimen organizado en Gotham. Todo cambia cuando aparece el Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.</strong></p>
+                <button class="boton">Reproducir</button>
+                <button class="boton">Más Información</button>
+                
+            </section>
+            <div>
+                <h3 id="mas-populares">10 más populares en Netflix</h3>
+                <span><h2>1</h2><img src="https://lumiere-a.akamaihd.net/v1/images/image_adf151ff.jpeg?region=0,0,540,810&width=320" alt=""></span>
+                <span><h2>2</h2><img src="https://lumiere-a.akamaihd.net/v1/images/image_d15c3072.jpeg?region=0,0,540,810&width=320" alt=""></span>
+                <span><h2>3</h2><img src="https://lumiere-a.akamaihd.net/v1/images/image_7d05ea1a.jpeg?region=0,0,540,810&width=320" alt=""></span>
+                <span><h2>4</h2><img src="https://lumiere-a.akamaihd.net/v1/images/image_40261a2d.jpeg?region=0,0,540,810&width=320" alt=""></span>
+                <span><h2>5</h2><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9" alt=""></span> 
+            </div>
+        </div>
+        <!--Tendecias-->
+        <h3>Tendencias</h3>
+        <div class="Tendencias">
+            <span><img src="https://occ-0-2612-3934.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeBlBRf7UDiVUUpQUXbz6wsdCV6VoaEQGK9BndAB-S0OCoGqsSX2GMXYhOkUlIRsX5sZg1yFubKxxaXIfI_XCW_h6z0nktLy7RAQbd3r3-217Mq6JETY2FwZI4bMPico1uAn6TBve6igWrtuCPf4CAXO6T9EnO6hcMWU0DX1cHj5rKj-ftHoyOY.jpg?r=c17" alt=""></span>
+            <span><img src="https://occ-0-2612-3934.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbzuH-eOJ3FvQpmM6ihWqv9KwfTPuhdjDRgNxJXuibuUuKXZdLBeqDQYeqTZNe5xZjsDkF1oyZ53B4MH2xJu7jyDJFCNB51fA5F2WbeDO4s9JBJUoNEDVJ25256s.jpg?r=471" alt=""></span>
+            <span><img src="https://occ-0-2612-3934.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbzuH-eOJ3FvQpmM6ihWqv9KwfTPuhdjDRgNxJXuibuUuKXZdLBeqDQYeqTZNe5xZjsDkF1oyZ53B4MH2xJu7jyDJFCNB51fA5F2WbeDO4s9JBJUoNEDVJ25256s.jpg?r=471" alt=""></span>
+            <span><img src="https://occ-0-2612-3934.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfP4tLg-e7Cc_FEqgf5GKVgPZNdImkfzZuptMrasWQtgbnRIe4yXJLzSvwiQoNYb0xa-8cLfingeuvMCuKwPKTKsJnqM1yaYBsIS5nDonhvH2k0mPuQuH-8SXT1s.jpg?r=59b" alt=""></span>
+            <span><img src="https://occ-0-2612-3934.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQCXPpJ5wZCeOjBwMgTfBpyeJs6caLX_FUCePYhAZxZRjR1m-UMR8lM15KnMd7EaKPgHtIywt0kUgV4JEHMJ-fZulDU.webp?r=95a" alt=""></span>
+        </div>
+        <!--Series Aclamadas por la Critica-->
+        <h3>Series Aclamadas por la Critica</h3>
+        <div class="Aclamadas">  
+            <span><img src="https://occ-0-4440-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcOvEJHjewItbGqP5qC4JR9pMQmqNgfXyfha7EBRYfwm-Id-PnPsWzdpJCE_6lMDoo-mEZQjZJsNe-ISqMlS3SXVs0xW8TgAsn4Quscwcv3hBvJGcghjB-SYmohzA6cksQ.webp?r=186" alt=""></span>
+            <span><img src="https://occ-0-4440-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbfklhhu-P5fR3c0iClf7xjzVZg4qsPSh2HzGUn3_FJhFyBrY8-kK2S2nbn6t8hthwEatKqjpBcbiaUtjLsHJjPbSqGL5Q9aGhxllJFvX57sYANGZMb_jF1OWvbE.jpg?r=61a" alt=""></span>
+            <span><img src="https://occ-0-4440-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZ2jYKbNyGa9Dl9VewFi_zzqYP8A3w4M538qhWe4ZlKNdHV2ANFDe6P59NxWMRx8tbEsutq4_V8boUf9XOX1q4xbvdYqAuVnN47YJJIpYwCQkY6hHWxDFBYJPZXb.jpg?r=a61" alt=""></span>
+            <span><img src="https://occ-0-4440-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe_qBhgdMw53IT1e9XKPL5YbHygCmYhKUuGsfCzl0JmEmgsT7Jc1CAQRKmpYBDG2H8KBB_yUwFY_LbBlpyvAeluzwMWvqyk1vNyM8BMvipZVtBqZUQM-PWyAUJsl.jpg?r=b23" alt=""></span>
+            <span><img src="https://occ-0-4440-114.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf79dskN3gsTv66VRYCvmLuOhCQ5jlB3EYkdEXk2D0I8HdmTewNLwjB1O7_lvhHfR35y6vuTDvu8KgiMrKkdczumWhvd4_yDMSfstFPOK2c3BaF1ENcp_6PvWAES.jpg?r=b5b" alt=""></span>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <img src="/Imagenes/facebook.png" alt="">
+            <img src="/Imagenes/instagram.png" alt="">
+            <img src="/Imagenes/gorjeo.png" alt="">
+            <img id="youtube" src="/Imagenes/youtube.png" alt="">
+        </div>
+        <div class="final-info">
+                <span><a>Audio y subtitulos</a></span>
+                <span><a>Prensa</a></span>
+                <span><a>Privacidad</a></span>
+                <span><a>Contáctanos</a></span>
+                <span><a>Audio descriptivo</a></span>
+                <span><a>Relaciones con inversionistas</a></span>
+                <span><a>Avisos legales</a></span>
+                <span id="colum-3"><a>Centro de ayuda</a></span>
+                <span><a>Empleo</a></span>
+                <span><a>Preferencias de cookies</a></span>
+                <span id="colum-4"><a>Tarjetas de regalo</a></span>
+                <span><a>Términos de uso</a></span>
+                <span><a>Información coorporativa</a></span>
+        </div>
+    </footer>
+</body>
+</html>
